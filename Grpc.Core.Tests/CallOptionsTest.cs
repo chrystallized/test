@@ -83,7 +83,10 @@ namespace Grpc.Core.Tests
             Assert.AreEqual(token, new CallOptions(propagationToken: propagationToken2).Normalize().CancellationToken);
             Assert.Throws(typeof(ArgumentException), () => new CallOptions(cancellationToken: token, propagationToken: propagationToken2).Normalize());
         }
-
+        public void test()
+        {
+            
+        }
         [Test]
         public void WaitForReady()
         {
